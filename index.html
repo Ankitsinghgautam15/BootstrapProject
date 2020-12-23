@@ -7,7 +7,34 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <style>
+       .flexcontainer{
+         display:flex;
+         flex-flow: row wrap;
+       }
+       .innercontainer
+       {
+         flex: 1 0 33%;
+         min-height: 33.33vh;
 
+       }
+       @media screen and (max-width: 800px) {
+        .innercontainer
+       {
+         flex: 1 0 50%;
+         min-height: 25vh;
+
+       }
+       }
+       @media screen and (max-width: 400px) {
+        .innercontainer
+       {
+         flex: 1 0 100%;
+         min-height: 12.5vh;
+
+       }
+       }
+     </style>
     <title>Testbook - Your journey begins here</title>
   </head>
   <body>
@@ -94,69 +121,113 @@
           <span class="visually-hidden">Next</span>
         </a>
       </div>
-      <div class="container my-4">
+       <div class="container my-4">
+      <div class="flexcontainer">
         <div class="row mb-2">
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">Online test</strong>
-                  <h3 class="mb-0">MCQ type</h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <p class="card-text mb-auto">Practice mock test of different different types of government as well as private exams here</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <img  class="bd-placeholder-img" width="200" height="250" src="laptop1.jpg" alt="">
-        
-                </div>
-              </div>
+       <div class="innercontainer">
+        <div class="col-md-10">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Online test</strong>
+              <h3 class="mb-0">MCQ type</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Practice mock test of different different types of government as well as private exams here</p>
+              <a href="#" class="stretched-link">Continue reading</a>
             </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Notes</strong>
-                  <h3 class="mb-0">Notes by our teachers</h3>
-                  <div class="mb-1 text-muted">Nov 11</div>
-                  <p class="mb-auto">Here you can find notes or last minute rvision tricks by our teachers</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <img  class="bd-placeholder-img" width="200" height="250" src="notes.jpg" alt="">
-                </div>
-              </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  class="bd-placeholder-img" width="300" height="300" src="laptop1.jpg" alt="">
+    
             </div>
           </div>
-          <div class="row mb-2">
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">Interaction</strong>
-                  <h3 class="mb-0">One On One</h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <p class="card-text mb-auto">We do One on One interaction if we feel student needs it.</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <img  class="bd-placeholder-img" width="200" height="250" src="sphone.jpg" alt="">
-        
-                </div>
-              </div>
+        </div>
+       </div>
+       <div class="innercontainer">
+        <div class="col-md-10">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Online test</strong>
+              <h3 class="mb-0">Notes by Our Teachers</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Here you can find notes or last minute rvision tricks by our teachers</p>
+              <a href="#" class="stretched-link">Continue reading</a>
             </div>
-            <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Courses</strong>
-                  <h3 class="mb-0">Courses Provided by us.</h3>
-                  <div class="mb-1 text-muted">Nov 11</div>
-                  <p class="mb-auto">Here you can find our Courses.</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <img  class="bd-placeholder-img" width="200" height="250" src="book.jpg" alt="">
-                </div>
-              </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  class="bd-placeholder-img" width="300" height="300" src="notes.jpg" alt="">
+    
             </div>
           </div>
+        </div>
+       </div>
+       <div class="innercontainer">
+        <div class="col-md-10">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Online test</strong>
+              <h3 class="mb-0">One On One Interaction</h3>
+              <div class="mb-1 text-muted">Aug 12</div>
+              <p class="card-text mb-auto">We do One on One interaction if we feel student needs it.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  class="bd-placeholder-img" width="300" height="300" src="sphone.jpg" alt="">
+    
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="innercontainer">
+        <div class="col-md-10">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Online test</strong>
+              <h3 class="mb-0">MCQ type</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Practice mock test of different different types of government as well as private exams here</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  class="bd-placeholder-img" width="300" height="300" src="laptop1.jpg" alt="">
+    
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="innercontainer">
+        <div class="col-md-10">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Online test</strong>
+              <h3 class="mb-0">Notes by Our Teachers</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Here you can find notes or last minute rvision tricks by our teachers</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  class="bd-placeholder-img" width="300" height="300" src="notes.jpg" alt="">
+    
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="innercontainer">
+        <div class="col-md-10">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Online test</strong>
+              <h3 class="mb-0">One On One Interaction</h3>
+              <div class="mb-1 text-muted">Aug 12</div>
+              <p class="card-text mb-auto">We do One on One interaction if we feel student needs it.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  class="bd-placeholder-img" width="300" height="300" src="sphone.jpg" alt="">
+    
+            </div>
+          </div>
+        </div>
+       </div>
+       </div>
+      </div>
       </div>
       <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
